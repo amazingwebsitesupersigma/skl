@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>From Cow to Plate: The Journey of Beef</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+  function showDetails(stage) {
+    const details = {
+      farm: "Cattle are raised on farms with access to pasture, clean water, and veterinary care.",
+      processing: "Beef is processed in regulated facilities ensuring hygiene and humane practices.",
+      distribution: "Packaged beef is transported via refrigerated trucks to retailers and restaurants.",
+      cooking: "Beef is prepared in various ways—grilled, roasted, stewed—depending on the cut.",
+      sustainability: "Efforts include reducing methane emissions, improving feed efficiency, and exploring plant-based alternatives."
+    };
+    document.getElementById('timeline-details').innerText = details[stage];
+  }
+</script>
   <style>
     body {
       font-family: 'Lato', sans-serif;
@@ -78,6 +90,24 @@
     <p>Modern beef production faces challenges like greenhouse gas emissions and land use. Ethical farming and plant-based alternatives are gaining traction.</p>
     <img src="sustainable.jpg" alt="Sustainable farming">
   </section>
+  
+<section>
+  <h2>Infographic: The Beef Journey</h2>
+  <p>This visual breaks down the key stages from farm to fork.</p>
+  <img src="infographic-beef-journey.jpg" alt="Beef journey infographic" style="width:100%; max-width:800px;">
+</section>
+  
+<section>
+  <h2>Interactive Timeline: From Cow to Plate</h2>
+  <div class="timeline">
+    <div class="timeline-event" onclick="showDetails('farm')">🐄 Farm Life</div>
+    <div class="timeline-event" onclick="showDetails('processing')">🔪 Processing</div>
+    <div class="timeline-event" onclick="showDetails('distribution')">🚚 Distribution</div>
+    <div class="timeline-event" onclick="showDetails('cooking')">🍽️ Cooking</div>
+    <div class="timeline-event" onclick="showDetails('sustainability')">🌱 Sustainability</div>
+  </div>
+  <div id="timeline-details" class="details-box"></div>
+</section>
 
   <footer>
     <p>&copy; 2025 Food Tech | Educating the future of food</p>
