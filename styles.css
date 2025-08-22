@@ -1,1 +1,25 @@
-
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.timeline-event {
+  background-color: #aa0000;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.timeline-event:hover {
+  background-color: #880000;
+}
+.details-box {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  border-radius: 8px;
+}
