@@ -1,185 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-  <meta name="referrer" content="strict-origin">
-  <link rel="icon" href="Untitled.jpg" />
-  <title>food tech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Cow to Plate: The Journey of Beef</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    @font-face {
-      font-family: 'Lato';
-      src: url('/site_media/css/fonts/Lato-Regular.ttf');
-    }
     body {
-      background-color: rgb(255, 255, 255);
-      font-family: Lato,Helvetica,Arial,sans-serif;
-      font-weight: 400;
-      font-size: 16px;
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
     }
-    a {
-      color: rgb(255, 255, 255);
-      text-decoration: none;
+    header {
+      background-color: #aa0000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
     h2 {
-      font-size: 16px;
+      color: #aa0000;
+      margin-bottom: 10px;
     }
-    p.success {
-      color: green;
-    }
-    .login_link {
-      bottom: -10px;
-      position: absolute;
-    }
-    .login_msg_bar {
-      clear: both;
-      font-size: 15px;
-      position: relative;
-      text-align: center;
-      top: -200px;
-      width: 352px;
-    }
-    .login_msg_bar p.error {
-      color: red;
-    }
-    .login_msg_bar p.info {
-      color: #970000;
-    }
-    .lost-div-container {
-        padding: 5px;
-        text-align: right;
-    }
-    #login {
-      height: 200px;
-      left: 50%;
-      margin-left: -140px;
-      margin-top: -110px;
-      position: relative;
-      top: 40%;
-      width: 280px;
-    }
-    #login a, #login a:visited {
-      color: #5B80B2;
-    }
-    .different_user_link a, .different_user_link a:visited {
-      color: #5B80B2;
-    }
-    #login .option a, #login .option a:visited {
-      color: #5B80B2;
-    }
-    #login label {
-      float: left;
-      font-size: 14px;
-    }
-    #login input[type='text'], #login input[type='password'], #login .field {
-      font-size: 16.5px;
-      width: 100%;
-      border-radius: 0;
-      color: #ffffff;
-      vertical-align: baseline;
-      margin: .2em;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #a9a9a9;
-      background-color: #fff;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 2px .5em;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
-    #login input[type='text']:focus, #login input[type='password']:focus, #login .field:focus {
-      border-style: solid;
-      border-color: black;
-    }
-    #login input.submit {
-      font-size: 15px;
-      font-weight: 400;
-      color: #000000;
-      background: linear-gradient(#aa0000, #910101);
-      border-color: #aa0000;
-      width: 99%;
-      height: 27px;
-      cursor: pointer;
-      border-radius: 3px;
-      margin-left: 5px;
-      border: 0px;
-      margin-top: 20px;
-      font-family: 'Lato';
-    }
-    #login table {
-      margin-bottom: 0;
-      width: 100%;
-    }
-    #login th, #login td {
-      padding: 2px 0;
-      text-align: center;
-      font-size: 15px;
-    }
-    #login .inner_wrapper {
+    img {
+      max-width: 100%;
+      height: auto;
       display: block;
-      height: 110px;
-      margin-top: 20px;
+      margin: 20px auto;
     }
-    #login .option {
-      bottom: -15px;
-      font-size: 11px;
-      height: 32px;
-      padding-left: 2px;
-      padding-top: 10px;
-      position: relative;
-      width: 150px;
-    }
-    .different_user_link {
-      clear: both;
-      font-size: 15px;
-      position: relative;
+    footer {
+      background-color: #333;
+      color: white;
       text-align: center;
-      bottom: -205px;
-      width: 352px;
-    }
-    #login_wrapper {
-      background: #fff;
-      border: 1px solid #202020;
-      height: 266.1px;
-      left: 50%;
-      margin-left: -176px;
-      margin-top: -100px;
-      padding: 4px;
-      position: fixed;
-      top: 50%;
-      width: 352px;
-    }
-    .title {
-      text-align: center;
-    }
-    .title.logo {
-      text-align: left;
-    }
-    #fortinet-logo-login {
-      width: 30px;
-      height: 30px;
-    }
-    #header {
-      margin-left: -40px;
-      margin-right: -40px;
-      background: #aa0000;
-      padding: 5px 10px;
-    }
-    .field-icon {
-      float: right;
-      margin-left: -25px;
-      margin-top: -25px;
-      position: relative;
-      z-index: 2;
+      padding: 20px;
     }
   </style>
-<link rel="stylesheet" type="text/css" href="font-awesome.css"/>
-  <head>
-  <header>six seven</header>
-<p>sdofijoidsjf</p>
- <img src="Untitled.jpg" alt="cow" width="500" height="600"> 
+</head>
+<body>
 
-    
-  </head>
+  <header>
+    <h1>From Cow to Plate</h1>
+    <p>Understanding the journey of beef</p>
+  </header>
+
+  <section>
+    <h2>1. Life on the Farm</h2>
+    <p>Cattle are raised on farms or ranches, often grazing on grasslands. Farmers ensure proper nutrition, health care, and humane treatment throughout the animal's life.</p>
+    <img src="cow-farm.jpg" alt="Cattle grazing on a farm">
+  </section>
+
+  <section>
+    <h2>2. Processing the Beef</h2>
+    <p>Once cattle reach maturity, they are transported to processing facilities. Here, meat is inspected, butchered, and packaged under strict safety regulations.</p>
+    <img src="processing.jpg" alt="Beef processing facility">
+  </section>
+
+  <section>
+    <h2>3. Distribution</h2>
+    <p>Packaged beef is shipped to grocery stores, restaurants, and markets. Cold-chain logistics ensure freshness and quality during transport.</p>
+    <img src="distribution.jpg" alt="Beef being transported">
+  </section>
+
+  <section>
+    <h2>4. Cooking & Consumption</h2>
+    <p>Beef is a versatile protein used in countless dishes—from steaks and burgers to stews and stir-fries. It’s rich in iron, zinc, and B vitamins.</p>
+    <img src="cooked-beef.jpg" alt="Cooked beef dish">
+  </section>
+
+  <section>
+    <h2>5. Sustainability & Ethics</h2>
+    <p>Modern beef production faces challenges like greenhouse gas emissions and land use. Ethical farming and plant-based alternatives are gaining traction.</p>
+    <img src="sustainability.jpg" alt="Sustainable farming">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Food Tech | Educating the future of food</p>
+  </footer>
+
+</body>
+</html>
